@@ -1,2 +1,2 @@
 #!/bin/bash
-ls |cat -n|grep [1359][[:space:]]|tr -s ' '|cut -f2
+cat -n | grep [13579][[:space:]] | tr -s '' | cut -f2
