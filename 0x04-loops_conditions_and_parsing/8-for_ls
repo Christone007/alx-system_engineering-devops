@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# List the content of a directory and parse it
+for i in *
+do
+	echo "$i" | cut -d - -f 2
+done
