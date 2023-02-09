@@ -3,3 +3,8 @@
 ### Introduction
 This directory holds projects that demonstrate the 
 understanding of Loops and Conditions in Shell Scripts
+
+### Learnings from doing the project
+1. Bash scripts take spaces very serious. As such:
+	* ```i=$(($i + 1))``` is not same as ```i=$(( $i + i ))```  
+	* For ```while``` loops, the condition is surrounded by "[ ]"
