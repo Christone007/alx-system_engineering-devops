@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Parse an apache log file to see the IP addresses visiting a website and the different status codes returned to each request by the server
+
+logfile="apache-access.log"
+awk -F ' ' '{print $1 " " $9}' $logfile | awk '{nums[$1" "$2]++}END{for (num in nums) print nums[num], num}' | sort -k1 -n -r
