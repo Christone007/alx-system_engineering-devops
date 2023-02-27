@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Lists all running processes
 
-ps auxH
+ps -aufx
